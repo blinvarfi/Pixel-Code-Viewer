@@ -9,6 +9,37 @@
     --plain-white: #FFFFFF;
 }
 
+/* bulletproofing Roboto font */
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/Roboto-Black-webfont.eot');
+    src: url('fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Black-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Black-webfont.woff') format('woff'),
+        url('fonts/Roboto-Black-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+        url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+}
+
 /* default style overriding of elements */
 h1,
 h2 {
@@ -20,7 +51,7 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+    font-family: 'robotoregular', 'Roboto', Arial, Helvetica, sans-serif !important;
     background-color: var(--dark-bg-color, #E4E4E4);
 }
 
@@ -44,7 +75,7 @@ body {
 
 .header-title {
     color: var(--main-text-color, #707070);
-    font-weight: 800;
+    font-family: 'robotoblack', 'Roboto';
     font-size: 1.5em;
 }
 
@@ -137,7 +168,7 @@ body {
 
 .sub-menu-title {
     font-size: 1.4em;
-    font-weight: 600;
+    font-family: 'robotobold';
     color: var(--main-text-color, #707070);
     margin-bottom: 16px;
 }
@@ -161,7 +192,6 @@ body {
 
 .label-wrapper label {
     font-size: 1em;
-    font-weight: 400;
     color: var(--main-text-color, #707070);
 }
 
