@@ -110,12 +110,12 @@ function fillPixels(colors, size) {
 }
 
 function rangeListener() {
-        document.getElementById("pixel-container").style.width = baseWidth * this.value + "px";
-        document.getElementById("pixel-container").style.height = baseHeight * this.value + "px";
-        let pixels = document.getElementsByClassName("newPixel");
-        for (let i = 0; i < pixels.length; i++) {
-            pixels[i].style.width = this.value + "px";
-            pixels[i].style.height = this.value + "px";
-        }
-        document.getElementById("zoom-value").innerHTML = this.value
+    document.getElementById("zoom-value").innerHTML = this.value
+    document.getElementById("pixel-container").style.width = baseWidth * this.value + "px";
+    document.getElementById("pixel-container").style.height = baseHeight * this.value + "px";
+    let pixels = document.getElementsByClassName("newPixel");
+    for (let i = 0; i < pixels.length; i++) {
+        pixels[i].style.width = this.value + "px";
+        pixels[i].style.height = this.value + "px";
+    }
 }
