@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // global variables to help with the resize functionality
-var rangePrev = 1;
+var rangePrev = 0;
 var baseWidth, baseHeight;
 
 function resetZoom() {
@@ -120,7 +120,6 @@ function rangeListener() {
             pixels[i].style.height = this.value + "px";
         }
         document.getElementById("zoom-value").innerHTML = this.value
-        rangePrev = this.value;
     } else {
         rangePrev = this.value;
     }
