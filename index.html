@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Pixel Code Viewer</title>
+    <meta name="description" content="Pixel code viewer challenge">
+    <meta name="author" content="Blin Varfi">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1 class="header-title">Pixel Code Viewer</h1>
+        </div>
+        <div class="main-body">
+            <div class="side-menu">
+                <div class="sub-menu">
+                    <h2 class="sub-menu-title">Code Selection</h2>
+                    <div class="field-wrapper">
+                        <div class="label-wrapper">
+                            <label for="style-selector">Style</label>
+                        </div>
+                        <div class="select-wrapper">
+                            <select id="style-selector" name="style-selector">
+                                <option value="style-1">Style 1</option>
+                                <option value="style-2">Style 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="label-wrapper">
+                            <label for="complexity-selector">Complexity</label>
+                        </div>
+                        <div class="select-wrapper">
+                            <select id="complexity-selector" name="complexity-selector">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="label-wrapper">
+                            <label for="size-selector">Size</label>
+                        </div>
+                        <div class="select-wrapper">
+                            <select id="size-selector" name="size-selector">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <h2 class="sub-menu-title">View Option</h2>
+                    
+                    <div class="field-wrapper">
+                        <div class="label-wrapper">
+                            <label for="zoom">Pixel Size</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input id="zoom" name="zoom" class="zoom" type="range" min="1" max="15" step="1"
+                                value="1">
+                        </div>
+                    </div>
+                                            <div class="zoom-value"> 
+                                                <span id="zoom-value">1</span>
+                                            </div>
+                </div>
+                <div class="sub-menu rest">
+
+                </div>
+            </div>
+
+            <div class="viewer-container">
+                <div id="pixel-container" class="pixel-container">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="scripts/materialize.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
