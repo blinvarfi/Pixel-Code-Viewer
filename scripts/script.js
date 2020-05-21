@@ -120,6 +120,7 @@ function rangeListener() {
             pixels[i].style.height = this.value + "px";
         }
         document.getElementById("zoom-value").innerHTML = this.value
+        rangePrev = this.value;
     } else {
         rangePrev = this.value;
     }
