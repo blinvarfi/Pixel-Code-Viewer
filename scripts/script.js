@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // global variables to help with the resize functionality
-var rangePrev = 0;
 var baseWidth, baseHeight;
 
 function resetZoom() {
@@ -111,7 +110,6 @@ function fillPixels(colors, size) {
 }
 
 function rangeListener() {
-    if (rangePrev != this.value && rangePrev != undefined) {
         document.getElementById("pixel-container").style.width = baseWidth * this.value + "px";
         document.getElementById("pixel-container").style.height = baseHeight * this.value + "px";
         let pixels = document.getElementsByClassName("newPixel");
@@ -120,8 +118,4 @@ function rangeListener() {
             pixels[i].style.height = this.value + "px";
         }
         document.getElementById("zoom-value").innerHTML = this.value
-        rangePrev = this.value;
-    } else {
-        rangePrev = this.value;
-    }
 }
